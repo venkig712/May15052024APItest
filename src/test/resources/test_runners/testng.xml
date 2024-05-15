@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite" thread-count="3" verbose="4">
+<suite name="Suite" thread-count="3" verbose="4" parallel = "tests">
 <listeners>
 		<listener
 			class-name="com.qa.gorestapi.listeners.ExtentReportListener" />
@@ -10,9 +10,15 @@
 			class-name="com.qa.gorestapi.listeners.AnnotationTransformer" />
 	</listeners>
 
-  <test name="Test">
+  <test name="GoRest API Get Call Test">
     <classes>
       <class name="restAPIGorest.GetCallAPIGorest"/>
+    </classes>
+  </test> <!-- Test -->
+
+ <test name="GoRest API Post Call Test">
+    <classes>
+      <class name="restAPIGorest.PostCallAPIGorest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
