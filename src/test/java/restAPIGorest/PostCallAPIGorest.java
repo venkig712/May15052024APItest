@@ -18,9 +18,9 @@ public class PostCallAPIGorest {
 @DataProvider(name = "userdata")	
  public Object[][] userCreation() {
 	 
-	return new Object[][] {{"Rajashekar","rajashekar@email.com","male","Active"},
-		{"Rajireddy","rajireddy@email.com","male","Active"},
-		{"Rajeshwari","raajeswari@email.com","male","Active"}
+	return new Object[][] {{"Rajashekar1","rajashekar"+System.currentTimeMillis()+"@email.com","male","Active"},
+		{"Rajireddy1","rajireddy"+System.currentTimeMillis() +"@email.com","male","Active"},
+		{"Rajeshwari1","raajeswari"+System.currentTimeMillis()+"@email.com","male","Active"}
 	};
 	 
  }
